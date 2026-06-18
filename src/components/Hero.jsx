@@ -88,19 +88,19 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 mb-10">
-            <Link
-              to="/family-law"
+            <a
+              href="tel:+19056861243"
               className="px-7 py-3.5 font-sans font-semibold text-navy rounded transition-colors no-underline"
               style={{ background: '#c9a84c' }}
             >
-              Family Law
-            </Link>
-            <Link
-              to="/criminal-defence"
+              Call Now
+            </a>
+            <a
+              href="#contact"
               className="px-7 py-3.5 font-sans font-semibold text-white border border-white/30 rounded hover:border-gold hover:text-gold transition-colors no-underline"
             >
-              Criminal Defence
-            </Link>
+              Consultation
+            </a>
           </div>
 
           <div className="flex flex-wrap gap-6 text-sm font-sans" style={{ color: 'rgba(255,255,255,0.65)' }}>
