@@ -3,10 +3,66 @@ import { Link } from 'react-router-dom'
 export default function Hero() {
   return (
     <section
-      className="flex items-center pt-28 pb-20 px-6 min-h-screen"
+      className="relative flex items-center pt-28 pb-20 px-6 min-h-screen overflow-hidden"
       style={{ background: '#0a1628' }}
     >
-      <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-6 items-center">
+      {/* Scales of Justice background decoration */}
+      <div className="absolute inset-0 pointer-events-none select-none flex items-center justify-center">
+        <svg
+          viewBox="0 0 500 600"
+          xmlns="http://www.w3.org/2000/svg"
+          className="absolute"
+          style={{
+            width: 'min(680px, 90vw)',
+            height: 'auto',
+            opacity: 0.045,
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            filter: 'blur(0.5px)',
+          }}
+          aria-hidden="true"
+        >
+          {/* Pillar / base */}
+          <rect x="242" y="100" width="16" height="380" fill="#c9a84c" rx="2" />
+          {/* Base platform */}
+          <rect x="170" y="472" width="160" height="14" fill="#c9a84c" rx="4" />
+          <rect x="190" y="486" width="120" height="10" fill="#c9a84c" rx="3" />
+          <rect x="150" y="496" width="200" height="16" fill="#c9a84c" rx="4" />
+          {/* Top crossbar */}
+          <rect x="80" y="96" width="340" height="12" fill="#c9a84c" rx="4" />
+          {/* Top finial */}
+          <polygon points="250,52 262,96 238,96" fill="#c9a84c" />
+          <circle cx="250" cy="46" r="12" fill="#c9a84c" />
+          {/* Left chain */}
+          <line x1="110" y1="108" x2="100" y2="200" stroke="#c9a84c" strokeWidth="3" strokeLinecap="round" />
+          <line x1="100" y1="200" x2="105" y2="280" stroke="#c9a84c" strokeWidth="3" strokeLinecap="round" />
+          {/* Left pan */}
+          <path d="M50,280 Q102,320 155,280" stroke="#c9a84c" strokeWidth="3.5" fill="none" strokeLinecap="round" />
+          <line x1="50" y1="280" x2="50" y2="283" stroke="#c9a84c" strokeWidth="2.5" />
+          <line x1="155" y1="280" x2="155" y2="283" stroke="#c9a84c" strokeWidth="2.5" />
+          <line x1="105" y1="280" x2="50" y2="280" stroke="#c9a84c" strokeWidth="2" />
+          <line x1="105" y1="280" x2="155" y2="280" stroke="#c9a84c" strokeWidth="2" />
+          {/* Right chain */}
+          <line x1="390" y1="108" x2="400" y2="200" stroke="#c9a84c" strokeWidth="3" strokeLinecap="round" />
+          <line x1="400" y1="200" x2="395" y2="280" stroke="#c9a84c" strokeWidth="3" strokeLinecap="round" />
+          {/* Right pan */}
+          <path d="M345,280 Q397,320 450,280" stroke="#c9a84c" strokeWidth="3.5" fill="none" strokeLinecap="round" />
+          <line x1="345" y1="280" x2="345" y2="283" stroke="#c9a84c" strokeWidth="2.5" />
+          <line x1="450" y1="280" x2="450" y2="283" stroke="#c9a84c" strokeWidth="2.5" />
+          <line x1="395" y1="280" x2="345" y2="280" stroke="#c9a84c" strokeWidth="2" />
+          <line x1="395" y1="280" x2="450" y2="280" stroke="#c9a84c" strokeWidth="2" />
+          {/* Decorative chain links */}
+          {[130,160,190,220,250].map(y => (
+            <ellipse key={y} cx="103" cy={y} rx="4" ry="6" fill="none" stroke="#c9a84c" strokeWidth="2" />
+          ))}
+          {[130,160,190,220,250].map(y => (
+            <ellipse key={y} cx="397" cy={y} rx="4" ry="6" fill="none" stroke="#c9a84c" strokeWidth="2" />
+          ))}
+        </svg>
+      </div>
+
+      <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-6 items-center relative z-10">
         {/* Left content */}
         <div>
           <p
