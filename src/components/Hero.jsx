@@ -6,7 +6,7 @@ export default function Hero() {
       className="flex items-center pt-28 pb-20 px-6 min-h-screen"
       style={{ background: '#0a1628' }}
     >
-      <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-6 items-center">
         {/* Left content */}
         <div>
           <p
@@ -65,14 +65,14 @@ export default function Hero() {
 
         {/* Right — portrait card */}
         <div className="flex justify-center md:justify-end">
-          <div className="relative" style={{ width: '320px' }}>
+          <div className="relative" style={{ width: '420px', maxWidth: '100%' }}>
             {/* Portrait card */}
             <div
               className="relative overflow-hidden"
               style={{
                 borderRadius: '260px 260px 180px 180px',
                 border: '2px solid #c9a84c',
-                height: '420px',
+                height: '540px',
                 background: '#1a2f45',
               }}
             >
