@@ -22,6 +22,7 @@ export default function Navbar() {
     { to: '/', label: 'Home' },
     { to: '/about', label: 'About' },
     { to: '/family-law', label: 'Family Law' },
+    { to: '/divorce-and-separation', label: 'Divorce' },
     { to: '/criminal-defence', label: 'Criminal Defence' },
   ]
 
