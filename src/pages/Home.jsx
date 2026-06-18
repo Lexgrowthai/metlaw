@@ -21,9 +21,15 @@ const services = [
     to: '/criminal-defence',
   },
   {
-    icon: '🏠',
-    title: 'Domestic Matters',
-    desc: 'Restraining orders, adoption, relocation applications, and parenting plan disputes resolved with priority.',
+    icon: '🏢',
+    title: 'Business Law',
+    desc: 'Incorporations, shareholder agreements, commercial contracts, business purchases and sales, and corporate governance.',
+    to: '/family-law',
+  },
+  {
+    icon: '📜',
+    title: 'Estate Law',
+    desc: 'Wills, powers of attorney, estate planning, probate, and administration of estates — protecting your legacy.',
     to: '/family-law',
   },
 ]
@@ -69,7 +75,7 @@ export default function Home() {
           <h2 className="font-serif font-bold text-navy text-4xl mb-12 text-center">
             How We Can Help
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((s) => (
               <ServiceCard key={s.title} {...s} />
             ))}
