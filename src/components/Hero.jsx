@@ -66,28 +66,25 @@ export default function Hero() {
         {/* Left content */}
         <div>
           <p
-            className="text-gold font-sans font-medium mb-5 uppercase"
+            className="text-gold font-sans font-medium mb-4 uppercase"
             style={{ fontSize: '0.72rem', letterSpacing: '3px' }}
           >
-            Trusted Legal Representation in Ontario
+            Law Firm · Ajax
           </p>
 
           <h1
-            className="font-serif font-bold text-white leading-tight mb-6"
-            style={{ fontSize: 'clamp(2.8rem, 5vw, 4.5rem)' }}
+            className="font-serif font-bold text-white leading-tight mb-4"
+            style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)' }}
           >
-            Defining{' '}
-            <em className="italic" style={{ color: '#c9a84c' }}>
-              Success
-            </em>{' '}
-            Together
+            Family Law, Criminal Law,<br />
+            Corporate Law, Wills &amp; Estates
           </h1>
 
           <div className="w-16 h-0.5 mb-6" style={{ background: '#c9a84c' }} />
 
           <p className="font-sans text-lg mb-10 max-w-lg leading-relaxed" style={{ color: 'rgba(255,255,255,0.65)' }}>
-            Metelsky Law provides compassionate, results-driven legal counsel across Family Law and
-            Criminal Defence. Serving Ajax, Bowmanville, Toronto and the Durham Region.
+            The Lawyers at Metelsky Law operate seamlessly for our clients, in order to provide the
+            best legal advice under competitive terms with original values.
           </p>
 
           <div className="flex flex-wrap gap-4 mb-10">
